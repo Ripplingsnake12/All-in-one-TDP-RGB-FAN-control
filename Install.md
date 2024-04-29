@@ -14,10 +14,8 @@ Download CachyOS from [here](https://iso.cachyos.org/240401/cachyos-kde-linux-24
 > Once installed open Konsole,copy and paste the following commands below.
 ```sh
 sudo systemctl enable --now bluetooth
-sudo pacman - S --noconfirm yay meson base-devel ninja podman libgudev rust cachyos-gaming-meta flatpack
-sudo flatpak install flathub me.timschneeberger.jdsp4linux
-```
-```sh
+sudo pacman - S --noconfirm yay meson base-devel ninja podman libgudev rust cachyos-gaming-meta 
+yay -S jamesdsp 
 curl -L https://github.com/SteamDeckHomebrew/decky-installer/releases/latest/download/install_release.sh | sh
 steam 
 ```
