@@ -24,16 +24,7 @@ sudo pacman -S  --nocomfirm trizen
 sudo flatpak install flathub me.timschneeberger.jdsp4linux
 ```
 ```sh
-yay -S arch-gaming-meta
- yay -S gamescope-plus lib32-gamescope-plus dxvk-bin  cmake
 curl -L https://github.com/SteamDeckHomebrew/decky-installer/releases/latest/download/install_release.sh | sh
-sudo pamac install steam-deckify
-#Install ASUSCTL
-git clone https://github.com/flukejones/asusctl.git
-cd asusctl
-make && sudo make install
-# Install Simple Decky TDP
-curl -L https://github.com/aarron-lee/SimpleDeckyTDP/raw/main/install.sh | sh
 
 ```
 > [!TIP]
