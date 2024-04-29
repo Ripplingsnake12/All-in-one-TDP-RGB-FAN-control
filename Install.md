@@ -7,31 +7,26 @@
 
 ## Installation
 
-Download CachyOS from [here]().
+Download CachyOS from [here](https://iso.cachyos.org/240401/cachyos-kde-linux-240401.iso).
 > + Choose systemd bootloader
 > + Choose online install
 > + Leave the rest of the options default.
-
-Once installed open Konsole,copy and pasting commands below.
-> [!IMPORTANT]
-> When asked choose deckify with `HHD session`
-
+> Once installed open Konsole,copy and paste the following commands below.
 ```sh
-sudo pacman -Syu
-sudo pacman - S --noconfirm ryzenadj yay meson base-devel ninja podman libgudev rust
-sudo pacman -S  --noconfirm octopi
-sudo pacman -S  --nocomfirm trizen
+sudo systemctl enable --now bluetooth
+sudo pacman - S --noconfirm yay meson base-devel ninja podman libgudev rust cachyos-gaming-meta flatpack
 sudo flatpak install flathub me.timschneeberger.jdsp4linux
 ```
 ```sh
 curl -L https://github.com/SteamDeckHomebrew/decky-installer/releases/latest/download/install_release.sh | sh
-
+steam 
 ```
 > [!TIP]
 > + Return to game mode is located at
 > + `/etc/skel`
 > + just copy to your Desktop
-> Open `System Settings` then go to `Startup and Shutdown`, at the bottom center left of the window click behaviour. Then and make sure log in again after logging off is checked.
+> Open `System Settings` in searchbox type sddm, select login screen, then bahaviour. Make sure log in again after logging off is checked.
+you will see a kde wallet warning. 
  
 
 > [!IMPORTANT]
