@@ -31,30 +31,8 @@ curl -L https://github.com/SteamDeckHomebrew/decky-installer/releases/latest/dow
 > + Return to game mode is located at
 > + `/etc/skel`
 > + just copy to your Desktop
-
-> [!IMPORTANT]
-> ## Once installed open steam and log into your account.
->
 > Open `System Settings` then go to `Startup and Shutdown`, at the bottom center left of the window click behaviour. Then and make sure log in again after logging off is checked.
-Go to Home
-> + make sure show hidden files is checked
-> + Goto .steam
-> + look for registy.vdf
-> + I have included an example .vdf
-> + You have to add "CompletedOOBE" "1"
-> + This has to be added in the same potition as it is in the example .vdf.
-> + Save
-
-> [!IMPORTANT]
-> ## Nested Desktop
-> > Go back to `Manjaro-SteamOS` folder open terminal and paste this 
-   
-```
-     chmod +x ./Nested_desktop.sh
-```
-> + Add as non steam game
-> + If you install steamdb from deckyloader you can add artwork to the shortcut
-> + note touch is not working at present in nested desktop 
+ 
 
 > [!IMPORTANT]
 > **Reboot**
