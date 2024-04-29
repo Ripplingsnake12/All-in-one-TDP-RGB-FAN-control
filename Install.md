@@ -19,10 +19,10 @@ curl -L https://github.com/SteamDeckHomebrew/decky-installer/releases/latest/dow
 yay -S jamesdsp hhd hhd-ui adjustor gamescope-session-steam-git
 sudo systemctl enable hhd@$(whoami)
 curl -L https://github.com/hhd-dev/hhd-decky/raw/main/install.sh | sh
-sudo cp -r /etc/skel/Desktop/steamos-gamemode.desktop $HOME/Desktop
 cd CachyOSsteam
 sudo pacman -U os-session-select-hhd.tar.zst
 sudo pacman -U cachyos-steamdeck.tar.zst
+sudo cp -r /etc/skel/Desktop/steamos-gamemode.desktop $HOME/Desktop
 steam
 
 ```
