@@ -21,6 +21,7 @@ yay -S jamesdsp hhd hhd-ui adjustor gamescope-session-steam-git
 sudo systemctl enable hhd@$(whoami)
 curl -L https://github.com/hhd-dev/hhd-decky/raw/main/install.sh | sh
 cd CachyOSsteam-edition
+sudo cp -r 99-splitlock.conf /etc/sysctl.d
 sudo pacman -U cachyos-deckify-1-6-any.pkg.tar.zst
 sudo cp -r /etc/skel/Desktop/steamos-gamemode.desktop $HOME/Desktop
 steam
