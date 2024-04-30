@@ -23,6 +23,7 @@ curl -L https://github.com/hhd-dev/hhd-decky/raw/main/install.sh | sh
 cd CachyOSsteam-edition
 sudo cp -r 99-splitlock.conf /etc/sysctl.d
 sudo pacman -U cachyos-deckify-1-6-any.pkg.tar.zst
+sudo pacman -U scx-scheds-git-0.1.8.r68.gd9ea53c-2-x86_64_v3.pkg.tar.zst
 sudo cp -r /etc/skel/Desktop/steamos-gamemode.desktop $HOME/Desktop
 steam
 
