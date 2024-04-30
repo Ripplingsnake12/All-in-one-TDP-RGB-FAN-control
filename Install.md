@@ -65,7 +65,7 @@ ux O
 > # Change steam prompts to match allys
 > + In game mode open `deckyloader` (plug symbol bottom right side steam menu)
 > + Install `CCS Loader` from list of apps
-> +  
+> +  Exit to desktop open a terminal and paste the following 
  ```
       cd $HOME/homebrew/themes && git clone https://github.com/semakusut/SBP-ROG-Ally.git
 
