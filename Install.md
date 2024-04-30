@@ -71,7 +71,25 @@ ux O
 
 ```
 
-
+> [!TIP]
+> + Cachyos has a great kernel package manager(in your apps)
+> + Recommened build is as follows
+> + Click configure
+> + Leave kernel as default Cachyos BORE +sched ext
+> + Select tweak kernel options prior to build with menuconfig
+> + Disable NUMA
+> + Set Running tick rate to 500
+> + Enable LTO set it to Thin
+> + Hit execue
+> + Config option will appear scroll to mitigations and press N to disable it , do the same to Virtuliation, press esc and Y to save, the kernel will now build.
+> + This will take a bit of time, it will prompt you for a password before it completes if you leave this to long it will exit and you will have to start again!
+> + Reboot after its done, as the ally is booting hit the volume up button a few times this will bring you into boot menu
+> + press A
+> + make sure the LTO kernel is selected , you only have to do this once your almost done
+> + Final step is to go to Desktop navigate to root/etc/default look for `scx`
+> + open it and change `SCX_SCHEDULER=` to `SCX_SCHEDULER=scx_lavd
+> + YOU NOW HAVE THE FASTER PERFORMING LOWEST LATANCY ROG ALLY GAMING EXPERIANCE!
+> + ENJOY!!!!!!
 
 
 
