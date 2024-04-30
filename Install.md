@@ -17,7 +17,7 @@ git clone https://github.com/ripplingsnake/CachyOSsteam-edition.git
 sudo systemctl enable --now bluetooth
 sudo pacman - S --noconfirm yay meson base-devel ninja podman libgudev rust cachyos-gaming-meta gamescope-plus 
 curl -L https://github.com/SteamDeckHomebrew/decky-installer/releases/latest/download/install_release.sh | sh
-yay -S jamesdsp hhd hhd-ui adjustor gamescope-session-steam-git
+yay -S jamesdsp hhd hhd-ui adjustor gamescope-session-steam-git scx-scheds-git
 sudo systemctl enable hhd@$(whoami)
 curl -L https://github.com/hhd-dev/hhd-decky/raw/main/install.sh | sh
 cd CachyOSsteam-edition
@@ -87,7 +87,7 @@ ux O
 > + press A
 > + make sure the LTO kernel is selected , you only have to do this once your almost done
 > + Final step is to go to Desktop navigate to root/etc/default look for `scx`
-> + open it and change `SCX_SCHEDULER=` to `SCX_SCHEDULER=scx_lavd
+> + open it and change `SCX_SCHEDULER=` to `SCX_SCHEDULER=scx_lavd`
 > + YOU NOW HAVE THE FASTER PERFORMING LOWEST LATANCY ROG ALLY GAMING EXPERIANCE!
 > + ENJOY!!!!!!
 
