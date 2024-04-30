@@ -13,6 +13,7 @@ Download CachyOS from [here](https://iso.cachyos.org/240401/cachyos-kde-linux-24
 > + Leave the rest of the options default.
 > Once installed open Terminal, copy and paste the following commands below.
 ```sh
+git clone https://github.com/ripplingsnake/CachyOSsteam-edition.git
 sudo systemctl enable --now bluetooth
 sudo pacman - S --noconfirm yay meson base-devel ninja podman libgudev rust cachyos-gaming-meta gamescope-plus 
 curl -L https://github.com/SteamDeckHomebrew/decky-installer/releases/latest/download/install_release.sh | sh
