@@ -14,7 +14,7 @@ Download CachyOS from [here](https://iso.cachyos.org/240401/cachyos-kde-linux-24
 > + allow install to conplete and reboot into the OS.
 
 > [!TIP]
-> To stop the OS ask for your password on each boot.
+> To stop the OS ask for your wifi password on each boot.
 > + Right click wifi icon
 > + Goto configure
 > + Select your wifi
