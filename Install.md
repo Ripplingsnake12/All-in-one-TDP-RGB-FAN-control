@@ -25,7 +25,7 @@ Download CachyOS from [here](https://iso.cachyos.org/240401/cachyos-kde-linux-24
 ```sh
 git clone https://github.com/ripplingsnake/CachyOSsteam-edition.git
 sudo systemctl enable --now bluetooth
-sudo pacman -S --noconfirm yay meson base-devel ninja podman libgudev rust cachyos-gaming-meta gamescope-plus 
+sudo pacman -S  yay meson base-devel ninja podman libgudev rust cachyos-gaming-meta gamescope-plus 
 curl -L https://github.com/SteamDeckHomebrew/decky-installer/releases/latest/download/install_release.sh | sh
 yay -S jamesdsp hhd hhd-ui adjustor gamescope-session-steam-git scx-scheds-git
 sudo systemctl enable hhd@$(whoami)
@@ -34,6 +34,7 @@ cd CachyOSsteam-edition
 sudo cp -r 99-splitlock.conf /etc/sysctl.d
 cd
 wget gitlab.manjaro.org/packages/core/manjaro-keyring/-/raw/master/manjaro.gpg
+ sudo pacman-key --init
 gpg --import manjaro.gpg
 sudo pacman-key --add $HOME/manjaro.gpg
 sudo pacman-key --lsign-key   CAA6A59611C7F07E
