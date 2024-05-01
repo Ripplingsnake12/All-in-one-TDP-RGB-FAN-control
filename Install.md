@@ -32,7 +32,14 @@ sudo systemctl enable hhd@$(whoami)
 curl -L https://github.com/hhd-dev/hhd-decky/raw/main/install.sh | sh
 cd CachyOSsteam-edition
 sudo cp -r 99-splitlock.conf /etc/sysctl.d
-sudo pacman -U cachyos-deckify-1-6-any.pkg.tar.zst
+cd
+wget gitlab.manjaro.org/packages/core/manjaro-keyring/-/raw/master/manjaro.gpg
+gpg --import manjaro.gpg
+sudo pacman-key --add $HOME/manjaro.gpg
+sudo pacman-key --lsign-key   CAA6A59611C7F07E
+cd CachyOSsteam-edition
+sudo pacman -U os-session-select-hhd-20240402-1-any.pkg
+sudo pacman -U steam-deckify-20240402-1-any.pkg
 sudo pacman -U scx-scheds-git-0.1.8.r68.gd9ea53c-2-x86_64_v3.pkg.tar.zst
 sudo cp -r /etc/skel/Desktop/steamos-gamemode.desktop $HOME/Desktop
 steam
