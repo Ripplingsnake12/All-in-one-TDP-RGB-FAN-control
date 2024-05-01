@@ -41,8 +41,10 @@ steam
 
 > [!IMPORTANT]
 > **Reboot only after logging into and settng up steam**
-> 
-
+> [!IMPORTANT]
+> + On reboot goto settings and type SDDM into the box, then select log in screen then behaviour
+> + Make sure both log in and relog in is selected and that the session is plasma(onetime)
+> + Reboot and you should go right i to game mode 
 > [!IMPORTANT]
 > ## To fix steam wifi speeds
 >```
