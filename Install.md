@@ -36,6 +36,7 @@ cd
 wget gitlab.manjaro.org/packages/core/manjaro-keyring/-/raw/master/manjaro.gpg
  sudo pacman-key --init
 gpg --import manjaro.gpg
+pacman-key --recv-key  CAA6A59611C7F07E
 sudo pacman-key --add $HOME/manjaro.gpg
 sudo pacman-key --lsign-key   CAA6A59611C7F07E
 
