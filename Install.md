@@ -37,6 +37,7 @@ wget gitlab.manjaro.org/packages/core/manjaro-keyring/-/raw/master/manjaro.gpg
 gpg --import manjaro.gpg
 sudo pacman-key --add $HOME/manjaro.gpg
 sudo pacman-key --lsign-key   CAA6A59611C7F07E
+
 cd CachyOSsteam-edition
 sudo pacman -U os-session-select-hhd-20240402-1-any.pkg
 sudo pacman -U steam-deckify-20240402-1-any.pkg
