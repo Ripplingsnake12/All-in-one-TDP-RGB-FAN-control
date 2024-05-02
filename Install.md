@@ -34,8 +34,8 @@ sudo cp -r 99-splitlock.conf /etc/sysctl.d
 cd
  ```
 
-### IMPORTANT! BEFORE YOU RUN THIS COMMAND!###
-> + oN THE LINE THAT READS sudo pacman-key --add /home/YOUR USER NAME/manjaro.gpg
+### IMPORTANT! BEFORE YOU RUN THIS COMMAND###
+> + ON THE LINE THAT READS sudo pacman-key --add /home/YOUR USER NAME/manjaro.gpg
 > + DELETE YOUR USER NAME and add the user name you have chosen!
 ```
 cd CachyOSsteam-edition
