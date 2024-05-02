@@ -28,24 +28,25 @@ sudo systemctl enable --now bluetooth
 sudo pacman -S   --noconfirm yay meson base-devel ninja podman libgudev rust cachyos-gaming-meta
 curl -L https://github.com/SteamDeckHomebrew/decky-installer/releases/latest/download/install_release.sh | sh
 yay -S jamesdsp hhd hhd-ui adjustor gamescope-session-steam-git scx-scheds-git
-sudo systemctl enable hhd@$(whoami)
 curl -L https://github.com/hhd-dev/hhd-decky/raw/main/install.sh | sh
 cd CachyOSsteam-edition
 sudo cp -r 99-splitlock.conf /etc/sysctl.d
 cd
-wget gitlab.manjaro.org/packages/core/manjaro-keyring/-/raw/master/manjaro.gpg
- sudo pacman-key --init
-gpg --import manjaro.gpg
-sudo pacman-key --add $HOME/manjaro.gpg
-sudo pacman-key --recv-key  CAA6A59611C7F07E
-sudo pacman-key --lsign-key   CAA6A59611C7F07E
+```sh
+
+```sh
 
 cd CachyOSsteam-edition
+wget gitlab.manjaro.org/packages/core/manjaro-keyring/-/raw/master/manjaro.gpg
+gpg --import manjaro.gpg
+sudo pacman-key --add /home/marc/Documents/manjaro.gpg
+sudo pacman-key --lsign E4CDFE50A2DA85D58C8A8C70CAA6A59611C7F07E
 sudo pacman -U os-session-select-hhd-20240402-1-any.pkg
 sudo pacman -U steam-deckify-20240402-1-any.tar.zst
 sudo pacman -U scx-scheds-git-0.1.8.r68.gd9ea53c-2-x86_64_v3.pkg.tar.zst
 sudo cp -r /etc/skel/Desktop/steamos-gamemode.desktop $HOME/Desktop
 sudo pacman -S gamscope-plus
+sudo systemctl enable hhd@$(whoami)
 steam
 
 ```
