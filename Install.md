@@ -21,14 +21,13 @@ Download CachyOS from [here](https://iso.cachyos.org/240401/cachyos-kde-linux-24
 > + On the right side there is a WIFI security box select it
 > + Select the second option store password for all users
 > + type your password and apply 
-> Once installed open Terminal, copy and paste the following commands below.
+> + Once installed open Terminal, copy and paste the following commands below.
+> + During install it will as you to press yes and also to chose from providers just chose the defaults!
 ```sh
 git clone https://github.com/ripplingsnake/CachyOSsteam-edition.git
 sudo systemctl enable --now bluetooth
-sudo pacman -S   --noconfirm yay meson base-devel ninja podman libgudev rust cachyos-gaming-meta
-curl -L https://github.com/SteamDeckHomebrew/decky-installer/releases/latest/download/install_release.sh | sh
+sudo pacman -S --noconfirm yay meson base-devel ninja podman libgudev rust cachyos-gaming-meta qt5-tools
 yay -S jamesdsp hhd hhd-ui adjustor gamescope-session-steam-git scx-scheds-git
-curl -L https://github.com/hhd-dev/hhd-decky/raw/main/install.sh | sh
 cd CachyOSsteam-edition
 sudo cp -r 99-splitlock.conf /etc/sysctl.d
 cd
@@ -48,9 +47,12 @@ sudo pacman -U os-session-select-hhd-20240402-1-any.pkg.tar.zst
 sudo pacman -U steam-deckify-20240402-1-any.pkg.tar.zst
 sudo pacman -U scx-scheds-git-0.1.8.r68.gd9ea53c-2-x86_64_v3.pkg.tar.zst
 sudo cp -r /etc/skel/Desktop/steamos-gamemode.desktop $HOME/Desktop
-sudo pacman -S gamscope-plus
+sudo pacman -S gamescope-plus 
 sudo systemctl enable hhd@$(whoami)
 steam
+curl -L https://github.com/SteamDeckHomebrew/decky-installer/releases/latest/download/install_release.sh | sh
+curl -L https://github.com/hhd-dev/hhd-decky/raw/main/install.sh | sh
+
 ```
 
 ```
