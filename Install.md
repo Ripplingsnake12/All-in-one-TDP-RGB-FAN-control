@@ -43,8 +43,9 @@ wget gitlab.manjaro.org/packages/core/manjaro-keyring/-/raw/master/manjaro.gpg
 gpg --import manjaro.gpg
 sudo pacman-key --add /home/username/CachyOSsteam-edition/manjaro.gpg &&
 sudo pacman-key --lsign E4CDFE50A2DA85D58C8A8C70CAA6A59611C7F07E
-sudo pacman -U os-session-select-hhd-20240402-1-any.tar.zst
-sudo pacman -U steam-deckify-20240402-1-any.tar.zst
+cd CachyOSsteam-edition
+sudo pacman -U os-session-select-hhd-20240402-1-any.pkg.tar.zst
+sudo pacman -U steam-deckify-20240402-1-any.pkg.tar.zst
 sudo pacman -U scx-scheds-git-0.1.8.r68.gd9ea53c-2-x86_64_v3.pkg.tar.zst
 sudo cp -r /etc/skel/Desktop/steamos-gamemode.desktop $HOME/Desktop
 sudo pacman -S gamscope-plus
