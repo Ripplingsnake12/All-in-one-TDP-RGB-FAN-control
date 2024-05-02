@@ -49,6 +49,7 @@ sudo cp -r /etc/skel/Desktop/steamos-gamemode.desktop $HOME/Desktop
 sudo pacman -S gamscope-plus
 sudo systemctl enable hhd@$(whoami)
 steam
+```
 
 ```
 
