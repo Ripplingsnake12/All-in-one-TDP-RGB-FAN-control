@@ -34,12 +34,14 @@ sudo cp -r 99-splitlock.conf /etc/sysctl.d
 cd
  ```
 
-### IMPORTANT!###
+### IMPORTANT! BEFORE YOU RUN THIS COMMAND!###
+> + oN THE LINE THAT READS sudo pacman-key --add /home/YOUR USER NAME/manjaro.gpg
+> + DELETE YOUR USER NAME and add the user name you have chosen!
 ```
 cd CachyOSsteam-edition
 wget gitlab.manjaro.org/packages/core/manjaro-keyring/-/raw/master/manjaro.gpg
 gpg --import manjaro.gpg
-sudo pacman-key --add /home/marc/Documents/manjaro.gpg
+sudo pacman-key --add /home/YOUR USER NAME/manjaro.gpg
 sudo pacman-key --lsign E4CDFE50A2DA85D58C8A8C70CAA6A59611C7F07E
 sudo pacman -U os-session-select-hhd-20240402-1-any.pkg
 sudo pacman -U steam-deckify-20240402-1-any.tar.zst
