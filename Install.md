@@ -18,8 +18,8 @@ Download CachyOS from [here](https://iso.cachyos.org/240401/cachyos-kde-linux-24
 > + Right click wifi icon
 > + Goto configure
 > + Select your wifi
-> + On the right side there is a security box select it
-> + Select the second option from the drop down Unencrypted
+> + On the right side there is a WIFI security box select it
+> + Select the second option store password for all users
 > + type your password and apply 
 > Once installed open Terminal, copy and paste the following commands below.
 ```sh
