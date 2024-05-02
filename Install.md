@@ -30,7 +30,12 @@ sudo pacman -S --noconfirm yay meson base-devel ninja podman libgudev rust cachy
 yay -S jamesdsp hhd hhd-ui adjustor gamescope-session-steam-git scx-scheds-git
 cd CachyOSsteam-edition
 sudo cp -r 99-splitlock.conf /etc/sysctl.d
+git clone https://github.com/flukejones/asusctl.git
+cd asusctl
+make build
+sudo make install
 cd
+
  ```
 
 ### IMPORTANT! BEFORE YOU RUN THIS COMMAND###
