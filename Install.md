@@ -31,11 +31,12 @@ yay -S jamesdsp hhd hhd-ui adjustor gamescope-session-steam-git scx-scheds-git
 curl -L https://github.com/hhd-dev/hhd-decky/raw/main/install.sh | sh
 cd CachyOSsteam-edition
 sudo cp -r 99-splitlock.conf /etc/sysctl.d
-cd ```
+cd
+ ```
 
-### IMPORTANT!
+### IMPORTANT!###
 ```
-
+```
 cd CachyOSsteam-edition
 wget gitlab.manjaro.org/packages/core/manjaro-keyring/-/raw/master/manjaro.gpg
 gpg --import manjaro.gpg
