@@ -36,7 +36,6 @@ cd
 
 ### IMPORTANT!###
 ```
-```
 cd CachyOSsteam-edition
 wget gitlab.manjaro.org/packages/core/manjaro-keyring/-/raw/master/manjaro.gpg
 gpg --import manjaro.gpg
