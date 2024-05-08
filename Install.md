@@ -19,7 +19,7 @@ Download CachyOS from [here](https://iso.cachyos.org/240401/cachyos-kde-linux-24
 git clone https://github.com/ripplingsnake/CachyOSsteam-edition.git
 sudo systemctl enable --now bluetooth
 sudo pacman -S --noconfirm yay meson base-devel ninja podman libgudev rust  
-yay -S jamesdsp hhd  gamescope-session-steam-git scx-scheds-git inputplumber-bin
+yay -S jamesdsp hhd  gamescope-session-steam-git scx-scheds-hhd-ui 
 cd CachyOSsteam-edition
 sudo cp -r 99-splitlock.conf /etc/sysctl.d
 cd
