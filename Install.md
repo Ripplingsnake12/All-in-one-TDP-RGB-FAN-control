@@ -13,7 +13,8 @@ Download CachyOS from [here](https://iso.cachyos.org/240401/cachyos-kde-linux-24
 > + Leave the rest of the options default.
 > + YOUR USER NAME MUST BE `gamer`
 
-> Copy and paste the followoing into Terminal 
+> Copy and paste the followoing into Terminal
+> Once install completes and you have logged into steam you can reboot
 ```sh
 git clone https://github.com/ripplingsnake/CachyOSsteam-edition.git
 sudo systemctl enable --now bluetooth
