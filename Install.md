@@ -11,76 +11,34 @@ Download CachyOS from [here](https://iso.cachyos.org/240401/cachyos-kde-linux-24
 > + Choose systemd bootloader
 > + Choose online install
 > + Leave the rest of the options default.
-> + allow install to conplete and reboot into the OS.
+> + YOUR USER NAME MUST BE `gamer`
 
-> [!TIP]
-> To stop the OS ask for your wifi password on each boot.
-> + Right click wifi icon
-> + Goto configure
-> + Select your wifi
-> + On the right side there is a WIFI security box select it
-> + Select the second option store password for all users
-> + type your password and apply 
-> + Once installed open Terminal, copy and paste the following commands below.
-> + During install it will as you to press yes and also to chose from providers just chose the defaults!
+> Copy and paste the followoing into Terminal 
 ```sh
 git clone https://github.com/ripplingsnake/CachyOSsteam-edition.git
 sudo systemctl enable --now bluetooth
-sudo pacman -S --noconfirm yay meson base-devel ninja podman libgudev rust cachyos-gaming-meta qt5-tools
-yay -S jamesdsp hhd hhd-ui adjustor gamescope-session-steam-git scx-scheds-git
+sudo pacman -S --noconfirm yay meson base-devel ninja podman libgudev rust cachyos-gaming-meta qt5-tools qt6-tools 
+yay -S jamesdsp hhd  gamescope-session-steam-git scx-scheds-git inputplumber-bin
 cd CachyOSsteam-edition
 sudo cp -r 99-splitlock.conf /etc/sysctl.d
-git clone https://github.com/flukejones/asusctl.git
-cd asusctl
-make build
-sudo make install
 cd
 
- ```
 
-### IMPORTANT! BEFORE YOU RUN THIS COMMAND###
-> + ON THE LINE THAT READS sudo pacman-key --add /home/username/CachyOSsteam-edition/manjaro.gpg
-> + DELETE YOUR USER NAME and add the user name you have chosen!
-```
 cd CachyOSsteam-edition
-wget gitlab.manjaro.org/packages/core/manjaro-keyring/-/raw/master/manjaro.gpg
-gpg --import manjaro.gpg
-sudo pacman-key --add /home/username/CachyOSsteam-edition/manjaro.gpg &&
-sudo pacman-key --lsign E4CDFE50A2DA85D58C8A8C70CAA6A59611C7F07E
-cd CachyOSsteam-edition
-sudo pacman -U os-session-select-hhd-20240402-1-any.pkg.tar.zst
-sudo pacman -U steam-deckify-20240402-1-any.pkg.tar.zst
 sudo pacman -U scx-scheds-git-0.1.8.r68.gd9ea53c-2-x86_64_v3.pkg.tar.zst
 sudo cp -r /etc/skel/Desktop/steamos-gamemode.desktop $HOME/Desktop
-sudo pacman -S gamescope-plus 
-sudo systemctl enable hhd@$(whoami)
-steam
+sudo pacman -S gamescope-plus cachyos-deckify
+
 curl -L https://github.com/SteamDeckHomebrew/decky-installer/releases/latest/download/install_release.sh | sh
-curl -L https://github.com/hhd-dev/hhd-decky/raw/main/install.sh | sh
+curl -L https://raw.githubusercontent.com/mengmeet/PowerControl/main/install.sh | sh
+sudo systemctl enable inputplumber
+sudo systemctl start inputplumber
+cd
+steam
 
 ```
 
-```
 
-> [!IMPORTANT]
-> **Reboot only after logging into and settng up steam**
-> [!IMPORTANT]
-> + On reboot goto settings and type SDDM into the box, then select log in screen then behaviour
-> + Make sure both log in and relog in is selected and that the session is plasma(onetime)
-> + Reboot and you should go right i to game mode 
-> [!IMPORTANT]
-> ## To fix steam wifi speeds
->```
-> sudo nano .steam/steam/steam_dev.cfg
-> ```
-> + copy this into terminal then `cntl + o` then `enter` then `cntl + x`
-
-```
-@DownloadRatelmprovementToAddAnother
-Connection 1.0
-@nClientDownloadEnableHTTP2PlatformLin
-ux O
-```
 
 > [!TIP]
 > ## JamesDSP
