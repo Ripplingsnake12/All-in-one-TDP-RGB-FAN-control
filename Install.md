@@ -18,7 +18,7 @@ Download CachyOS from [here](https://iso.cachyos.org/240401/cachyos-kde-linux-24
 ```sh
 git clone https://github.com/ripplingsnake/CachyOSsteam-edition.git
 sudo systemctl enable --now bluetooth
-sudo pacman -S --noconfirm yay meson base-devel ninja podman libgudev rust cachyos-gaming-meta qt5-tools qt6-tools 
+sudo pacman -S --noconfirm yay meson base-devel ninja podman libgudev rust  
 yay -S jamesdsp hhd  gamescope-session-steam-git scx-scheds-git inputplumber-bin
 cd CachyOSsteam-edition
 sudo cp -r 99-splitlock.conf /etc/sysctl.d
@@ -27,8 +27,7 @@ cd
 
 cd CachyOSsteam-edition
 sudo pacman -U scx-scheds-git-0.1.8.r68.gd9ea53c-2-x86_64_v3.pkg.tar.zst
-sudo cp -r /etc/skel/Desktop/steamos-gamemode.desktop $HOME/Desktop
-sudo pacman -S gamescope-plus cachyos-deckify
+sudo pacman -S gamescope-plus 
 
 curl -L https://github.com/SteamDeckHomebrew/decky-installer/releases/latest/download/install_release.sh | sh
 curl -L https://raw.githubusercontent.com/mengmeet/PowerControl/main/install.sh | sh
