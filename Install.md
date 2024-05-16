@@ -2,6 +2,7 @@
 
 > [!IMPORTANT]
 > You will need a mouse, keyboard, usb drive, and a usb hub (preferably with power passthru, but not required).
+> At the moment you will need ethernet for install stage 
 
 # This is a unique take of Steam OS on linux.
 
