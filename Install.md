@@ -21,7 +21,8 @@ cd
 
 
 cd CachyOSsteam-edition
-sudo pacman -U scx-scheds-git-0.1.8.r68.gd9ea53c-2-x86_64_v3.pkg.tar.zst
+sudo pacman -U *.tar.zst
+sudo systemctl enable --now rogue-enemy
 curl -L https://github.com/SteamDeckHomebrew/decky-installer/releases/latest/download/install_release.sh | sh
 
 ```
