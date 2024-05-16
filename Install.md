@@ -18,7 +18,7 @@ Download CachyOS from [here] (https://iso.cachyos.org/240512-deckify/cachyos-dec
 git clone https://github.com/ripplingsnake/CachyOSsteam-edition.git
 
 sudo pacman -S --noconfirm yay  cachyos-gaming-meta
-yay -S jamesdsp asusctl rog-control-canter
+yay -S jamesdsp-git asusctl rog-control-canter
 cd CachyOSsteam-edition
 sudo cp -r 99-splitlock.conf /etc/sysctl.d
 cd
