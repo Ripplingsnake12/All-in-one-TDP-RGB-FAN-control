@@ -7,19 +7,13 @@
 
 ## Installation
 
-Download CachyOS from [here](https://iso.cachyos.org/240401/cachyos-kde-linux-240401.iso).
-> + Choose systemd bootloader
-> + Choose online install
-> + Leave the rest of the options default.
-> + YOUR USER NAME MUST BE `gamer`
-
-> Copy and paste the followoing into Terminal
-> Once install completes and you have logged into steam you can reboot
+Download CachyOS from [here] (https://iso.cachyos.org/240512-deckify/cachyos-deckify-linux-240512.iso).
+> + YOUR USER NAME MUST BE `gamer
 ```sh
 git clone https://github.com/ripplingsnake/CachyOSsteam-edition.git
-sudo systemctl enable --now bluetooth
-sudo pacman -S --noconfirm yay meson base-devel ninja podman libgudev rust  
-yay -S jamesdsp hhd  gamescope-session-steam-git scx-scheds-hhd-ui 
+
+sudo pacman -S --noconfirm yay  
+yay -S jamesdsp asusctl
 cd CachyOSsteam-edition
 sudo cp -r 99-splitlock.conf /etc/sysctl.d
 cd
@@ -27,14 +21,7 @@ cd
 
 cd CachyOSsteam-edition
 sudo pacman -U scx-scheds-git-0.1.8.r68.gd9ea53c-2-x86_64_v3.pkg.tar.zst
-sudo pacman -S gamescope-plus 
-
 curl -L https://github.com/SteamDeckHomebrew/decky-installer/releases/latest/download/install_release.sh | sh
-curl -L https://raw.githubusercontent.com/mengmeet/PowerControl/main/install.sh | sh
-sudo systemctl enable inputplumber
-sudo systemctl start inputplumber
-cd
-steam
 
 ```
 
@@ -52,7 +39,7 @@ steam
 
 
 > [!TIP]
-> Your fan curves and TDP can be set  in HHD in decky loader
+> Your fan curves can be set in the app rog control centre 
 
 
 >[!TIP]
