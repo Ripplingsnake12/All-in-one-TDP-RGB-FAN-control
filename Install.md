@@ -11,7 +11,9 @@
 ## Installation
 
 Download CachyOS from [here] (https://iso.cachyos.org/240512-deckify/cachyos-deckify-linux-240512.iso).
-> + YOUR USER NAME MUST BE `gamer
+> + Install, etcher  is recommended to create USB
+> + Leave user name as gamer and xhoose your own password.
+> + YOUR USER NAME MUST BE gamer
 ```sh
 git clone https://github.com/ripplingsnake/CachyOSsteam-edition.git
 
@@ -62,6 +64,9 @@ curl -L https://github.com/SteamDeckHomebrew/decky-installer/releases/latest/dow
       cd $HOME/homebrew/themes && git clone https://github.com/semakusut/SBP-ROG-Ally.git
 
 ```
+[!info]
+Useful Commands
+to be finished 
 
 
 
