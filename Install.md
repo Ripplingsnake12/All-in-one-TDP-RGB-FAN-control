@@ -19,7 +19,7 @@ sudo pacman -S  yay cachyos-gaming-meta bauh
 &&
 sudo pacman -Rdd hhd hhd-ui adjustor
 &&
-yay -S jamesdsp-git 
+yay -S jamesdsp-git sunshine-git
 &&
 sudo cp -r 99-splitlock.conf /etc/sysctl.d
 &&
