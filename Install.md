@@ -77,7 +77,30 @@ makepkg -sfi
 > `if you get a black screen going from gamemode to desktop just touch the screen`
 
 >[!TIP]
-> Bauh is the prefered package manager its in your App list 
+> Bauh is the prefered package manager its in your App list
+
+> [!IMPORTANT]
+> ## ROGUE ENEMY
+> + for those who want to use the recommened control and tdp methods run this to install rogue
+```
+sudo pacman -Rdd hhd hhd-ui adjustor
+cd CachyOSsteam-edition
+sudo pacman -U *.tar.zst
+&&
+sudo pacman -S asusctl rog-control-center
+&&
+sudo systemctl enable --now rogue-enemy
+```
+> + GOTO
+> + /etc/Rogue enemy folder
+> + open conf and change touchbar =true to flase
+> + reboot
+> + Your fans are then controlled by Asusctl, Rog app in your desktop app list
+> + Hold left `cc` buttton to cycle through power modes
+> + Blue = quiet profile
+> + Green = balanced profile
+> + Red = turbo 
+
 
 
 
