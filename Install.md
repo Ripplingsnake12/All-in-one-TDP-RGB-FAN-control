@@ -15,7 +15,7 @@ Download CachyOS from [here] (https://iso.cachyos.org/240512-deckify/cachyos-dec
 ```sh
 git clone https://github.com/ripplingsnake/CachyOSsteam-edition.git
 cd CachyOSsteam-edition
-sudo pacman -S  yay cachyos-gaming-meta
+sudo pacman -S  yay cachyos-gaming-meta bauh
 &&
 sudo pacman -Rdd hhd hhd-ui adjustor
 &&
