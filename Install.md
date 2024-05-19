@@ -90,19 +90,6 @@ sudo pacman -U *.tar.zst
 sudo pacman -S asusctl rog-control-center
 sudo rm -Rdd /home/gamer/homebrew/plugins/hhd-decky
 sudo systemctl enable --now rogue-enemy
-#!/bin/bash
-
-# Path to the configuration file
-CONFIG_FILE=/etc/ROGueENEMY/config.cfg
-
-# The old line to be replaced
-OLD_LINE=touchbar = true;
-
-# The new line to replace with
-NEW_LINE=touchbar = false;
-
-# Use sed to replace the line
-sed -i "s|$OLD_LINE|$NEW_LINE|" "$CONFIG_FILE"
 ```
 > [!IMPORTANT]
 > + GOTO
