@@ -91,6 +91,7 @@ sudo pacman -S asusctl rog-control-center
 &&
 sudo systemctl enable --now rogue-enemy
 ```
+> [!IMPORTANT]
 > + GOTO
 > + /etc/Rogue enemy folder
 > + open conf and change touchbar =true to flase
