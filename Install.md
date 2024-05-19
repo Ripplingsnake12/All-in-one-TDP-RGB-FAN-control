@@ -10,7 +10,7 @@
 
 Download CachyOS from [here] (https://iso.cachyos.org/240512-deckify/cachyos-deckify-linux-240512.iso).
 > + Install, etcher  is recommended to create USB
-> + Leave user name as gamer and xhoose your own password.
+> + Leave user name as gamer and choose your own password.
 > + YOUR USER NAME MUST BE `gamer`
 ```sh
 git clone https://github.com/ripplingsnake/CachyOSsteam-edition.git
@@ -71,6 +71,10 @@ makepkg -sfi
       cd $HOME/homebrew/themes && git clone https://github.com/semakusut/SBP-ROG-Ally.git
 
 ```
+
+>[!TIP]
+> Mode switching is being worked on to provide a more stable solution, all distros are affected atm.
+> `if you get a black screen going from gamemode to desktop just touch the screen`
 
 
 
