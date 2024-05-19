@@ -50,7 +50,7 @@ makepkg -sfi
 > ```
 > This is included to improve the sound.
 > + It will be in your apps
-> + You can add it as a non steam game
+> + You can add it as a non steam game `right click it in app list and chose Add to steam in options`
 > + Its recommened to enable dynamic boost and boost pre amplification
 > + Goto jamesdsp in steam and select the dolby irs from the list in Convolver and enable it.
 > + goto setting in jamesdsp and enable allow control of volume sink 
