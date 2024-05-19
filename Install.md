@@ -16,24 +16,22 @@ Download CachyOS from [here] (https://iso.cachyos.org/240512-deckify/cachyos-dec
 > + YOUR USER NAME MUST BE gamer
 ```sh
 git clone https://github.com/ripplingsnake/CachyOSsteam-edition.git
-
-sudo pacman -S --noconfirm yay  cachyos-gaming-meta
-yay -S jamesdsp-git asusctl rog-control-canter
 cd CachyOSsteam-edition
+sudo pacman -S  yay cachyos-gaming-meta
+&&
+sudo pacman -Rdd hhd hhd-ui adjustor
+&&
+yay -S jamesdsp-git 
+&&
 sudo cp -r 99-splitlock.conf /etc/sysctl.d
-cd
-
-
-cd CachyOSsteam-edition
-sudo pacman -U *.tar.zst
-sudo systemctl enable --now rogue-enemy
+&&
+curl -L https://github.com/hhd-dev/hhd/raw/master/install.sh | sh
+&&
 curl -L https://github.com/SteamDeckHomebrew/decky-installer/releases/latest/download/install_release.sh | sh
+&&
+curl -L https://github.com/hhd-dev/hhd-decky/raw/main/install.sh | sh
 
 ```
-[!IMPORTANT]
-> + Go to root/etc/rogueenemy/conf
-> + Open the file and change touchbar = true to touchbar = false
-> + Save and reboot 
 
 
 > [!TIP]
