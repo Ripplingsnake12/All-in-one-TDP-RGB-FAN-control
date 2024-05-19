@@ -15,6 +15,7 @@ Download CachyOS from [here] (https://iso.cachyos.org/240512-deckify/cachyos-dec
 ```sh
 git clone https://github.com/ripplingsnake/CachyOSsteam-edition.git
 cd CachyOSsteam-edition
+
 sudo pacman -S  yay cachyos-gaming-meta bauh
 
 sudo pacman -Rdd hhd hhd-ui adjustor
@@ -86,9 +87,8 @@ makepkg -sfi
 sudo pacman -Rdd hhd hhd-ui adjustor
 cd CachyOSsteam-edition
 sudo pacman -U *.tar.zst
-
 sudo pacman -S asusctl rog-control-center
-
+sudo rm /home/gamer/homebrew/plugins/hhd-decky
 sudo systemctl enable --now rogue-enemy
 ```
 > [!IMPORTANT]
