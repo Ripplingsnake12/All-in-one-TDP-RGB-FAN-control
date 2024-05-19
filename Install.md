@@ -45,21 +45,20 @@ makepkg -sfi
 ```
 > [!TIP]
 > ## JamesDSP
+> ```
+> sudo cp -r /home/gamer/CachyOSsteam-edition/DolbyGameBalanced.irs /home/gamer/.config/jamesdsp/irs
+> ```
 > This is included to improve the sound.
 > + It will be in your apps
 > + You can add it as a non steam game
 > + Its recommened to enable dynamic boost and boost pre amplification
-> + move the `dolby.irs` file to `/home.config/jamesdsp/irs`( make sure hidden files are selected to find it)
 > + Goto jamesdsp in steam and select the dolby irs from the list in Convolver and enable it.
+> + goto setting in jamesdsp and enable allow control of volume sink 
 > + Turn on Dynamic Bass Boost and adjust post gain to your liking.
 
 
 > [!TIP]
-> + Your fan curves can be set in the app rog control centre
->   Your power profile can be changed by holding down the left command key(Steammenu) your leds will flash a colour when the profile has been set 
->   + Blue = quiet
->   + Green = balanced
->   + Red = turbo
+> + TDP and Fans can be controlled through HHD in Decky plugin
 
 
 >[!TIP]
