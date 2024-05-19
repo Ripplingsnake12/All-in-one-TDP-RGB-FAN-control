@@ -30,6 +30,8 @@ curl -L https://github.com/hhd-dev/hhd/raw/master/install.sh | sh
 curl -L https://github.com/SteamDeckHomebrew/decky-installer/releases/latest/download/install_release.sh | sh
 &&
 curl -L https://github.com/hhd-dev/hhd-decky/raw/main/install.sh | sh
+&&
+sudo pacman -S -U *.tar.zst
 
 ```
 
