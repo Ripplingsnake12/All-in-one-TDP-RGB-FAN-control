@@ -81,7 +81,7 @@ makepkg -sfi
 
 > [!IMPORTANT]
 > ## ROGUE ENEMY
-> + for those who want to use the recommened control and tdp methods run this to install rogue
+> + For those who want to use Rogue Enemy Controls and TDP 
 ```
 sudo pacman -Rdd hhd hhd-ui adjustor
 cd CachyOSsteam-edition
