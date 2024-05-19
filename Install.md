@@ -88,7 +88,7 @@ curl -L https://github.com/hhd-dev/hhd/raw/master/uninstall.sh | sh
 cd CachyOSsteam-edition
 sudo pacman -U *.tar.zst
 sudo pacman -S asusctl rog-control-center
-sudo rm /home/gamer/homebrew/plugins/hhd-decky
+sudo rm -Rdd /home/gamer/homebrew/plugins/hhd-decky
 sudo systemctl enable --now rogue-enemy
 ```
 > [!IMPORTANT]
