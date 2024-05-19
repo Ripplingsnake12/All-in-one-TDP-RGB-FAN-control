@@ -76,6 +76,9 @@ makepkg -sfi
 > Mode switching is being worked on to provide a more stable solution, all distros are affected atm.
 > `if you get a black screen going from gamemode to desktop just touch the screen`
 
+>[!TIP]
+> Bauh is the prefered package manager its in your App list 
+
 
 
 
