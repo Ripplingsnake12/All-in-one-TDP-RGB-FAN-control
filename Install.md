@@ -84,7 +84,7 @@ makepkg -sfi
 > ## ROGUE ENEMY
 > + For those who want to use Rogue Enemy Controls and TDP 
 ```
-sudo pacman -Rdd hhd hhd-ui adjustor
+curl -L https://github.com/hhd-dev/hhd/raw/master/uninstall.sh | sh
 cd CachyOSsteam-edition
 sudo pacman -U *.tar.zst
 sudo pacman -S asusctl rog-control-center
