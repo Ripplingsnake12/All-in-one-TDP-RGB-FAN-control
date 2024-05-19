@@ -1,5 +1,3 @@
-
-
 > [!IMPORTANT]
 > You will need a mouse, keyboard, usb drive, and a usb hub (preferably with power passthru, but not required).
 > At the moment you will need ethernet for install stage
@@ -13,7 +11,7 @@
 Download CachyOS from [here] (https://iso.cachyos.org/240512-deckify/cachyos-deckify-linux-240512.iso).
 > + Install, etcher  is recommended to create USB
 > + Leave user name as gamer and xhoose your own password.
-> + YOUR USER NAME MUST BE gamer
+> + YOUR USER NAME MUST BE `gamer`
 ```sh
 git clone https://github.com/ripplingsnake/CachyOSsteam-edition.git
 cd CachyOSsteam-edition
@@ -35,7 +33,16 @@ sudo pacman -S -U *.tar.zst
 
 ```
 
+> [!IMPORTANT]
+> + Update Gamescope to fully patched version for ROG Ally
+```
+sudo pacman -Rdd openvr
+sudo pacman Rdd gamescope-plus
+git clone https://github.com/hhd-dev/handheld-gamescope
+cd handheld-gamescope
 
+makepkg -sfi
+```
 > [!TIP]
 > ## JamesDSP
 > This is included to improve the sound.
