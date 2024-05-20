@@ -16,10 +16,15 @@ Download CachyOS from [here] (https://iso.cachyos.org/240512-deckify/cachyos-dec
 git clone https://github.com/ripplingsnake/CachyOSsteam-edition.git
 cd CachyOSsteam-edition
 
-sudo pacman -S  yay cachyos-gaming-meta bauh
+sudo pacman -S  yay cachyos-gaming-meta bauh base-devel rust
 
 sudo pacman -Rdd hhd hhd-ui adjustor
+```
 
+> [!IMPORTANT]
+> ## Close terminal and reopen before running other commands to allow rust to update
+
+```
 yay -S jamesdsp-git sunshine-git
 
 sudo cp -r 99-splitlock.conf /etc/sysctl.d
@@ -29,21 +34,11 @@ curl -L https://github.com/hhd-dev/hhd/raw/master/install.sh | sh
 curl -L https://github.com/SteamDeckHomebrew/decky-installer/releases/latest/download/install_release.sh | sh
 
 curl -L https://github.com/hhd-dev/hhd-decky/raw/main/install.sh | sh
-
-sudo pacman -S -U *.tar.zst
-
 ```
 
 > [!IMPORTANT]
 > + Update Gamescope to fully patched version for ROG Ally
-```
-sudo pacman -Rdd openvr
-sudo pacman Rdd gamescope-plus
-git clone https://github.com/hhd-dev/handheld-gamescope
-cd handheld-gamescope
 
-makepkg -sfi
-```
 > [!TIP]
 > ## JamesDSP
 > ```
@@ -59,7 +54,7 @@ makepkg -sfi
 
 
 > [!TIP]
-> + TDP and Fans can be controlled through HHD in Decky plugin
+> + TDP and Fans can be controlled through HHD in Decky plugin or if you choose Rouge and asusctl ( my fav ) through asusctl
 
 
 >[!TIP]
