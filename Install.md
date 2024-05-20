@@ -36,9 +36,6 @@ curl -L https://github.com/SteamDeckHomebrew/decky-installer/releases/latest/dow
 curl -L https://github.com/hhd-dev/hhd-decky/raw/main/install.sh | sh
 ```
 
-> [!IMPORTANT]
-> + Update Gamescope to fully patched version for ROG Ally
-
 > [!TIP]
 > ## JamesDSP
 > ```
