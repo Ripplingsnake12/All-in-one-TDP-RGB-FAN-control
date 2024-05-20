@@ -38,6 +38,9 @@ curl -L https://github.com/hhd-dev/hhd-decky/raw/main/install.sh | sh
 
 > [!TIP]
 > ## JamesDSP
+
+> [!IMPORTANT]
+> + `Run jamesdsp first before pasting the next command to allow jamesdsp to set up files`
 > ```
 > sudo cp -r /home/gamer/CachyOSsteam-edition/DolbyGameBalanced.irs /home/gamer/.config/jamesdsp/irs
 > ```
