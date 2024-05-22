@@ -40,11 +40,10 @@ sudo cp-r /usr/share/applications/steam.desktop  $HOME/.local/share/applications
 
 ```
 > +  Open
-`home /.local/share/applications/steam.deskto
-p `in a text editor
+`home /.local/share/applications/steam.desktpp `in a text editor
 3. Change the Exec line by adding ` - steamdeck `option to the end of the line
 > [!TIP]
-> + TDP and Fans can be controlled through HHD in Decky plugin or if you choose Rouge and asusctl ( my fav ) through asusctl
+> + TDP and Fans can be controlled through HHD in Decky plugin or if you choose Rouge-enemy and asusctl (my recommend way) through asusctl
 
 
 >[!TIP]
@@ -58,7 +57,7 @@ p `in a text editor
 
 ```
 >[!TIP]
-> Bauh is the prefered package manager its in your App list
+> Bauh is the prefered package manager its in your App list ise the searxh finction to find the package you want. This manager will also update apps and packages.
 
 > [!IMPORTANT]
 > ## ROGUE ENEMY
@@ -72,16 +71,17 @@ sudo rm -Rdd /home/gamer/homebrew/plugins/hhd-decky
 sudo systemctl enable --now rogue-enemy
 ```
 > [!IMPORTANT]
-> + GOTO
-> + /etc/Rogue enemy folder
-> + open conf and change touchbar =true to flase
+> + Goto
+> + /etc/Rogueenemy folder
+> + open conf.conf file and change touchbar =true to false
+> + Save
 > + reboot
 > + Your fans are then controlled by Asusctl, Rog app in your desktop app list
 > + Hold left `cc` buttton to cycle through power modes
-> + Blue = quiet profile
-> + Green = balanced profile
-> + Red = turbo 
-
+> + Blue = quiet profile, 10 watts 
+> + Green = balanced profile, 15 with boost to 19 if needed. 
+> + Red = performance , max power and performance  
+ >The Ally will now auto switch power profiles for AC or DC 
 
 
 
