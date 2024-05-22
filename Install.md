@@ -81,7 +81,14 @@ sudo systemctl enable --now rogue-enemy
 > + Blue = quiet profile, 10 watts 
 > + Green = balanced profile, 15 with boost to 19 if needed. 
 > + Red = performance , max power and performance  
- >The Ally will now auto switch power profiles for AC or DC 
+ >The Ally will now auto switch power profiles for AC or DC
+
+[!INFORMATION]
+> + Useful commands
+> + sudo pacman -Syu ( system update)
+> + sudo pacman -S ( install a package)
+> + sudo pacman -R ( remove a package)
+> + sudo sdboot-manage gen save and update and changes you make to kernel
 
 
 
