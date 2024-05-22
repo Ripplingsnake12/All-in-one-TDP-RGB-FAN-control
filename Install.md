@@ -10,8 +10,7 @@
 
 Download CachyOS from [here] (https://iso.cachyos.org/240512-deckify/cachyos-deckify-linux-240512.iso).
 > + Install, etcher  is recommended to create USB
-> + Leave user name as gamer and choose your own password.
-> + YOUR USER NAME MUST BE `gamer`
+
 ```sh
 git clone https://github.com/ripplingsnake/CachyOSsteam-edition.git
 cd CachyOSsteam-edition
