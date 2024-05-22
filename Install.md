@@ -57,10 +57,10 @@ sudo cp-r /usr/share/applications/steam.desktop  $HOME/.local/share/applications
 
 ```
 >[!TIP]
-> Bauh is the prefered package manager its in your App list ise the searxh finction to find the package you want. This manager will also update apps and packages.
+> Bauh is the prefered package manager its in your App list use the search function  to find the package you want. This manager will also update apps and packages.
 
 > [!IMPORTANT]
-> ## ROGUE ENEMY
+> ## ROGUE ENEMY (For controls and gyro and led) 
 > + For those who want to use Rogue Enemy Controls and TDP 
 ```
 curl -L https://github.com/hhd-dev/hhd/raw/master/uninstall.sh | sh
