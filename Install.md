@@ -16,7 +16,7 @@ Download CachyOS from [here] (https://iso.cachyos.org/240512-deckify/cachyos-dec
 git clone https://github.com/ripplingsnake/CachyOSsteam-edition.git
 cd CachyOSsteam-edition
 
-sudo pacman -S  yay cachyos-gaming-meta bauh base-devel rust
+sudo pacman -S  yay cachyos-gaming-meta bauh base-devel rust fuse2
 
 sudo pacman -Rdd hhd hhd-ui adjustor
 ```
@@ -25,7 +25,7 @@ sudo pacman -Rdd hhd hhd-ui adjustor
 > ## Close terminal and reopen before running other commands to allow rust to update
 
 ```
-yay -S jamesdsp-git sunshine-git
+yay -S  sunshine-git
 
 sudo cp -r 99-splitlock.conf /etc/sysctl.d
 
@@ -36,23 +36,12 @@ curl -L https://github.com/SteamDeckHomebrew/decky-installer/releases/latest/dow
 curl -L https://github.com/hhd-dev/hhd-decky/raw/main/install.sh | sh
 ```
 
-> [!TIP]
-> ## JamesDSP
-
 > [!IMPORTANT]
-> + `Run jamesdsp first before pasting the next command to allow jamesdsp to set up files`
-> ```
-> sudo cp -r /home/gamer/CachyOSsteam-edition/DolbyGameBalanced.irs /home/gamer/.config/jamesdsp/irs
-> ```
-> This is included to improve the sound.
-> + It will be in your apps
-> + You can add it as a non steam game `right click it in app list and chose Add to steam in options`
-> + Its recommened to enable dynamic boost and boost pre amplification
-> + Goto jamesdsp in steam and select the dolby irs from the list in Convolver and enable it.
-> + goto setting in jamesdsp and enable allow control of volume sink 
-> + Turn on Dynamic Bass Boost and adjust post gain to your liking.
+> + To stop steam game mode from reverting to stable if you choose beta.
+```
+sudo cp-r /usr/share/applications/steam.desktop  $HOME/.local/share/applications/steam.desktop
 
-
+```
 > [!TIP]
 > + TDP and Fans can be controlled through HHD in Decky plugin or if you choose Rouge and asusctl ( my fav ) through asusctl
 
