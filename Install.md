@@ -15,7 +15,7 @@ Download CachyOS from [here] (https://iso.cachyos.org/240512-deckify/cachyos-dec
 git clone https://github.com/ripplingsnake/CachyOSsteam-edition.git
 cd CachyOSsteam-edition
 
-sudo pacman -S  yay cachyos-gaming-meta bauh base-devel rust fuse2
+sudo pacman -S cachyos-gaming-meta bauh base-devel rust fuse2
 
 sudo pacman -Rdd hhd hhd-ui adjustor
 ```
@@ -24,8 +24,6 @@ sudo pacman -Rdd hhd hhd-ui adjustor
 > ## Close terminal and reopen before running other commands to allow rust to update
 
 ```
-yay -S  sunshine-git
-
 sudo cp -r 99-splitlock.conf /etc/sysctl.d
 
 curl -L https://github.com/hhd-dev/hhd/raw/master/install.sh | sh
@@ -41,6 +39,10 @@ curl -L https://github.com/hhd-dev/hhd-decky/raw/main/install.sh | sh
 sudo cp-r /usr/share/applications/steam.desktop  $HOME/.local/share/applications/steam.desktop
 
 ```
+> +  Open
+`home /.local/share/applications/steam.deskto
+p `in a text editor
+3. Change the Exec line by adding ` - steamdeck `option to the end of the line
 > [!TIP]
 > + TDP and Fans can be controlled through HHD in Decky plugin or if you choose Rouge and asusctl ( my fav ) through asusctl
 
