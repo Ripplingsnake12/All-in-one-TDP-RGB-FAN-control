@@ -17,7 +17,7 @@ cd CachyOSsteam-edition
 
 sudo pacman -S cachyos-gaming-meta bauh base-devel rust fuse2
 
-sudo pacman -Rdd hhd hhd-ui adjustor
+
 ```
 
 > [!IMPORTANT]
@@ -26,22 +26,13 @@ sudo pacman -Rdd hhd hhd-ui adjustor
 ```
 sudo cp -r 99-splitlock.conf /etc/sysctl.d
 
-curl -L https://github.com/hhd-dev/hhd/raw/master/install.sh | sh
 
 curl -L https://github.com/SteamDeckHomebrew/decky-installer/releases/latest/download/install_release.sh | sh
-
-curl -L https://github.com/hhd-dev/hhd-decky/raw/main/install.sh | sh
 ```
 
 > [!IMPORTANT]
 > + To stop steam game mode from reverting to stable if you choose beta.
-```
-sudo cp-r /usr/share/applications/steam.desktop  $HOME/.local/share/applications/steam.desktop
 
-```
-> +  Open
-`home /.local/share/applications/steam.desktpp `in a text editor
-3. Change the Exec line by adding ` - steamdeck `option to the end of the line
 > [!TIP]
 > + TDP and Fans can be controlled through HHD in Decky plugin or if you choose Rouge-enemy and asusctl (my recommend way) through asusctl
 
@@ -60,10 +51,11 @@ sudo cp-r /usr/share/applications/steam.desktop  $HOME/.local/share/applications
 > Bauh is the prefered package manager its in your App list use the search function  to find the package you want. This manager will also update apps and packages.
 
 > [!IMPORTANT]
-> ## ROGUE ENEMY (For controls and gyro and led) 
+> ## Install ROGUE ENEMY (For controls and gyro and led) and remove HHD 
 > + For those who want to use Rogue Enemy Controls and TDP 
 ```
 curl -L https://github.com/hhd-dev/hhd/raw/master/uninstall.sh | sh
+sudo pacman -Rdd hhd hhd-ui adjustor
 cd CachyOSsteam-edition
 sudo pacman -U *.tar.zst
 sudo pacman -S asusctl rog-control-center
