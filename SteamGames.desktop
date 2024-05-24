@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name=Run Game Setup Script
-Exec=python3 /path/to/steamgames.py
-Icon=utilities-terminal
-Type=Application
-Terminal=true
-Comment=Runs the game setup script to create .desktop files and add games to Steam
