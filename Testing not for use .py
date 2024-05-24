@@ -83,14 +83,28 @@ def add_to_steam_library(name, exec_path, icon_path):
 
     print(f"Added '{name}' to Steam library.")
 
-# Example usage:
-game_folder = "MyAwesomeGame"  # Replace with the actual game folder name
-game_exec_path = os.path.join(games_directory, game_folder, "game_executable.exe")  # Adjust the executable file name
-game_icon_path = os.path.join(games_directory, game_folder, "game_icon.png")  # Adjust the icon file name
+# Function to scan games directory and process each game
+def scan_and_process_games(games_directory):
+    for game_folder in os.listdir(games_directory):
+        game_path = os.path.join(games_directory, game_folder)
+        if os.path.isdir(game_path):
+            # Look for the executable and icon files
+            exec_path = None
+            icon_path = None
+            for file in os.listdir(game_path):
+                if file.endswith('.exe'):
+                    exec_path = os.path.join(game_path, file)
+                elif file.endswith('.png'):
+                    icon_path = os.path.join(game_path, file)
+            
+            if exec_path:
+                if not icon_path:
+                    icon_path = "/path/to/default/icon.png"  # Provide a default icon if none is found
+                add_to_steam_library(game_folder, exec_path, icon_path)
+                create_desktop_file(game_folder, exec_path, icon_path)
+            else:
+                print(f"No executable found for {game_folder}")
 
-if os.path.exists(game_exec_path) and os.path.exists(game_icon_path):
-    add_to_steam_library(game_folder, game_exec_path, game_icon_path)
-    create_desktop_file(game_folder, game_exec_path, game_icon_path)
-else:
-    print("Executable or icon file not found. Please check the paths.")
+# Scan the games directory and process each game
+scan_and_process_games(games_directory)
 
