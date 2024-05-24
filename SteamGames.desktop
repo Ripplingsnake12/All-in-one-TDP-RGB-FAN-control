@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Run Game Setup Script
-Exec=python3 /path/to/your/script/create_and_add_to_steam.py
+Exec=python3 /path/to/steamgames.py
 Icon=utilities-terminal
 Type=Application
 Terminal=true
