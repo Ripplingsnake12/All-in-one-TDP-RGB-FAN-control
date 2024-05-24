@@ -57,6 +57,10 @@ def add_to_steam_library(name, exec_path, icon_path):
     with open(config_path, 'rb') as f:
         shortcuts = vdf.binary_load(f)
 
+    # Ensure "shortcuts" key exists
+    if "shortcuts" not in shortcuts:
+        shortcuts["shortcuts"] = []
+
     # Create a new entry for the game
     new_entry = {
         "AppName": name,
@@ -67,12 +71,7 @@ def add_to_steam_library(name, exec_path, icon_path):
         "IsHidden": 0,
         "AllowDesktopConfig": 1,
         "OpenVR": 0,
-        "tags": {
-            "1": {
-                "tag": "game",
-                "name": name,
-            }
-        }
+        "tags": {}
     }
 
     # Add the new entry to the shortcuts
@@ -88,6 +87,10 @@ def add_to_steam_library(name, exec_path, icon_path):
 game_folder = "MyAwesomeGame"  # Replace with the actual game folder name
 game_exec_path = os.path.join(games_directory, game_folder, "game_executable.exe")  # Adjust the executable file name
 game_icon_path = os.path.join(games_directory, game_folder, "game_icon.png")  # Adjust the icon file name
-add_to_steam_library(game_folder, game_exec_path, game_icon_path)
-create_desktop_file(game_folder, game_exec_path, game_icon_path)
+
+if os.path.exists(game_exec_path) and os.path.exists(game_icon_path):
+    add_to_steam_library(game_folder, game_exec_path, game_icon_path)
+    create_desktop_file(game_folder, game_exec_path, game_icon_path)
+else:
+    print("Executable or icon file not found. Please check the paths.")
 
