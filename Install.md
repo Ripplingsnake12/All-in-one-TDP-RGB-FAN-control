@@ -90,7 +90,14 @@ sudo systemctl enable --now rogue-enemy
 > + sudo pacman -R ( remove a package)
 > + sudo sdboot-manage gen save and update and changes you make to kernel
 
+[!INFORMATION]
 
+## SteamGames (WIP)
+> + Move the steamgames.py file some where safe and move the steamgames.desktop to your desktop
+> + Make both files executable (right click and select properties, or chmod +x them)
+> + Copy and paste the location of your steamgames.py into the steamgames.desktop file where it asks you to specify path.
+> + when run it will ask you to specify the directory of your non steam games and auto add them to steam and create a .desktop file for the game
+> + you may need to run sudo pacman -S vdf 
 
 
 
