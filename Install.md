@@ -24,7 +24,9 @@ sudo pacman -S cachyos-gaming-meta bauh base-devel rust fuse2
 > ## Close terminal and reopen before running other commands to allow rust to update
 
 ```
+cd cd CachyOSsteam-edition
 sudo cp -r 99-splitlock.conf /etc/sysctl.d
+sudo cp -r pipewire.conf.d /etc/pipewire
 
 ```
 
