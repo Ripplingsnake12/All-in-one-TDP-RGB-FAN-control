@@ -15,7 +15,7 @@ Download CachyOS from [here] (https://iso.cachyos.org/240512-deckify/cachyos-dec
 git clone https://github.com/ripplingsnake/CachyOSsteam-edition.git
 cd CachyOSsteam-edition
 
-sudo pacman -S cachyos-gaming-meta bauh base-devel rust fuse2
+sudo pacman -S cachyos-gaming-meta bauh base-devel rust fuse2 ryzenadj
 
 
 ```
@@ -26,25 +26,26 @@ sudo pacman -S cachyos-gaming-meta bauh base-devel rust fuse2
 ```
 cd cd CachyOSsteam-edition
 sudo cp -r 99-splitlock.conf /etc/sysctl.d
-sudo cp -r pipewire.conf.d /etc/pipewire
+sudo cp -r $HOME/CachyOSsteam-edition/pipewire.conf.d /etc/pipewire
 
 ```
 
 
 > [!TIP]
 > + TDP and Fans can be controlled through  PowerControl and asusctl respectivly
+> + The Powercontrol.sh need to be made executable (right click/properties/permissions check file is executable)
+> + Copy it to a safe location like your documents folder.
+> + Add it as a non steam game.
+> + You will have a tpd slider from 5-50 watts as you move the slider up it will auto set the correct power profile.
+> + Once set close the program the setting will stay until next reboot it will set default tdp to 10 watts
+> + This was made simple as i wanted an easy way to set the power profiles and tdp and i dont use Deckyloader.
+> + ## AUDIO
+> + When you open sound in desktop you will see a new audio sink with atmos 7.1 sound.
+> + To use this set the normal H17/19 family speakers to 100% or above.
+> + Then start game mode goto sound and select the virtual sink. enjoy
 
 
->[!TIP]
-> # Change steam prompts to match allys
-> + In game mode open `deckyloader` (plug symbol bottom right side steam menu)
-> + Install `CCS Loader` from list of apps
-> +  Exit to desktop open a terminal and paste the following
-> +  
- ```
-      cd $HOME/homebrew/themes && git clone https://github.com/semakusut/SBP-ROG-Ally.git
 
-```
 
 
 [!INFORMATION]
