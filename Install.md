@@ -15,7 +15,8 @@ Download CachyOS from [here] (https://iso.cachyos.org/240512-deckify/cachyos-dec
 git clone https://github.com/ripplingsnake/CachyOSsteam-edition.git
 cd CachyOSsteam-edition
 
-sudo pacman -S cachyos-gaming-meta bauh base-devel rust fuse2 ryzenadj
+sudo pacman -S cachyos-gaming-meta bauh rust fuse2 yay
+yay -S ryzenadj
 
 
 ```
