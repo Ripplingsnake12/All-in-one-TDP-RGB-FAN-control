@@ -25,7 +25,7 @@ yay -S ryzenadj
 > ## Close terminal and reopen before running other commands to allow rust to update
 
 ```
-cd cd CachyOSsteam-edition
+ cd CachyOSsteam-edition
 sudo cp -r 99-splitlock.conf /etc/sysctl.d
 sudo cp -r $HOME/CachyOSsteam-edition/pipewire.conf.d /etc/pipewire
 
