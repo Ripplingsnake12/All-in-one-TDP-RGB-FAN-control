@@ -6,6 +6,8 @@ Also Asusctl and Rog-Control-Center.
 After Downloading the Bazzite .sh navigate to the download location and open a terminal and copy and paste the following to Install.
 
 chmod +x Bazzite_Arch_install.sh
+
+
 ./Bazzite_Arch_install.sh
 
 
