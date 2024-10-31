@@ -20,10 +20,6 @@ Environment=\"HHD_HORI_STEAM=1\"" | sudo tee $CONFIG_FILE
 # Reload systemd manager configuration
 sudo systemctl daemon-reload
 
-# Enable and start the service for the current session (optional)
-# Replace `hhd@YOUR_INSTANCE` with the actual instance name if needed
-sudo systemctl enable hhd@YOUR_INSTANCE.service
-sudo systemctl start hhd@YOUR_INSTANCE.service
 
 echo "Bazzite kernel installed, additional setup completed, and systemd configuration updated."
 
