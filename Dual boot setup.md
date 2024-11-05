@@ -18,14 +18,17 @@ Size: 2048MiB
 Filesystem: FAT32
 Mount point: /boot
 Flags: boot
-Create another partition for root:
+
+
+- Create another partition for root:
 Size: At least 20000MiB
 Filesystem: Any, refer Filesystem
 Mount point: /
-Flags:
-- This partition is your main one so set it to use all the remaining space 
-Double check that Install boot loader on: is pointing to /boot ie select the new fat 2048 MB partition you created
+Flags: (leave empty) 
+- This partition is your main one so set it to use all the remaining space
+   
+- Double check that Install boot loader on: is pointing to /boot ie select the new fat 2048 MB partition you created to install cachyos 
 
-Reboot to select windows or cachyos hild down volune up button during boot and use dpad and A button to select windows boot manager or Cachyos 
+- Reboot to select windows or cachyos hold down volume up button during boot and use dpad and A button to select windows boot manager or Cachyos 
 
 Enjoy!
