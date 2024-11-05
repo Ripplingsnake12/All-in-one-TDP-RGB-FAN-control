@@ -3,9 +3,8 @@
 
 - Select the largest partition and shrink it to the size you want for your Cachyos install
 
-- Follow the inscructions
 
-- Boot into the ISO and click the Launch Installer button
+- Insert Cachyos usb and Boot into the ISO setup your wifi and then click the Launch Installer button
 
 - Set your preferred Language and Region/Timezone.
 
@@ -13,7 +12,7 @@
 
 - Select Manual partitioning.
 
- - Create a new partition with the following:
+ - Create a new partition in free space you created in windows with the following:
 Size: 2048MiB
 Filesystem: FAT32
 Mount point: /boot
