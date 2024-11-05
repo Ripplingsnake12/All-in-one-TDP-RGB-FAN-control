@@ -13,17 +13,17 @@
 - Select Manual partitioning.
 
  - Create a new partition in free space you created in windows with the following:
-Size: 2048MiB
-Filesystem: FAT32
-Mount point: /boot
-Flags: boot
+- Size: 2048MiB
+- Filesystem: FAT32
+- Mount point: /boot
+- Flags: boot
 
 
 - Create another partition for root:
-Size: At least 20000MiB
-Filesystem: Btrfs
-Mount point: /
-Flags: (leave empty) 
+- Size: At least 20000MiB
+- Filesystem: Btrfs
+- Mount point: /
+- Flags: (leave empty) 
 - This partition is your main one so set it to use all the remaining space
    
 - Double check that Install boot loader on: is pointing to /boot ie select the new fat 2048 MB partition you created to install cachyos 
