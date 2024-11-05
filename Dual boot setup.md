@@ -8,6 +8,8 @@
 
     - Insert cachyos USB into the ally
     - Hold left volume button down to enter bios and change first boot option to your Cachyos USB
+    - Disable secure boot
+    - Save and exit bios
     -   Boot into the ISO and click the Launch Installer button
     - Set your preferred Language and Region/Timezone.
     - Configure your Keyboard Layout.
