@@ -1,4 +1,4 @@
-#!/bin/sh
+
 # Script to install Bazzite Arch kernel, run additional setup, and update systemd configuration for MCU Powersave
 
 # Step 1: Install Bazzite Arch Kernel
@@ -19,9 +19,6 @@ Environment=\"HHD_HORI_STEAM=1\"" | sudo tee $CONFIG_FILE
 
 # Reload systemd manager configuration
 sudo systemctl daemon-reload
-
-
-echo "Bazzite kernel installed, additional setup completed, and systemd configuration updated."
 
 
 
