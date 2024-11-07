@@ -3,7 +3,7 @@
 
 # Step 1: Install Bazzite Arch Kernel
 wget https://github.com/hhd-dev/kernel-bazzite/releases/download/6.11.6-302/linux-bazzite-6.11.6.302.bazzite.fc41-1-x86_64.pkg.tar.zst
-sudo pacman -U linux-bazzite-6.11.5.310.bazzite.fc41-1-x86_64.pkg.tar.zst
+sudo pacman -U linux-bazzite-6.11.6.302.bazzite.fc41-1-x86_64.pkg.tar.zst
 
 # Step 2: Run additional setup command
 curl -L https://github.com/hhd-dev/hhd/raw/master/install.sh | bash
