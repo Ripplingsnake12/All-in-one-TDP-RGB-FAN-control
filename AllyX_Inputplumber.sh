@@ -13,6 +13,18 @@ curl -L https://raw.githubusercontent.com/mengmeet/PowerControl/main/install.sh 
 # Run huesync install script
 curl -L https://raw.githubusercontent.com/honjow/huesync/main/install.sh | sh
 
+# A script to download and install steam-powerbuttond
+
+# Download the repository
+git clone https://github.com/ShadowBlip/steam-powerbuttond.git
+
+# Navigate to the directory
+cd steam-powerbuttond
+
+# Run the install script
+./install.sh
+
+
 # Set mcu_powersave to 1
 echo 1 | sudo tee /sys/devices/virtual/firmware-attributes/asus-armoury/attributes/mcu_powersave/current_value
 
