@@ -12,6 +12,10 @@ curl -L https://raw.githubusercontent.com/mengmeet/PowerControl/main/install.sh 
 
 # Run huesync install script
 curl -L https://raw.githubusercontent.com/honjow/huesync/main/install.sh | sh
+# Install deckyplumber to help with inputplumber controller switching 
+
+curl -L https://github.com/aarron-lee/DeckyPlumber/raw/main/install.sh | sh
+
 
 # A script to download and install steam-powerbuttond
 
