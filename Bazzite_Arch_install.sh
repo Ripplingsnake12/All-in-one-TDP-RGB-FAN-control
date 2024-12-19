@@ -8,7 +8,7 @@ sudo pacman -R inputplumber
 # Step 2: Run additional setup command
 curl -L https://github.com/hhd-dev/hhd/raw/master/install.sh | bash
 
-# Step 3: Update the existing override.conf file with necessary environment variables
+curl https://raw.githubusercontent.com/FakeMichau/fgmod/main/prepare.sh | bash -- 3: Update the existing override.conf file with necessary environment variables
 
 CONFIG_FILE="/usr/lib/systemd/system/hhd@.service.d/override.conf"
 
