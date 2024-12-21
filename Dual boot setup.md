@@ -17,13 +17,20 @@
 - Create a new partition with the following:
     - Size: 2048MiB
     - Filesystem: FAT32
-    - Mount point: /boot
+    - Mount point:
+    ```
+
+     /boot
+    ```
     - Flags: boot
 
 - Create another partition for root:
     - Size: At least 20000MiB
     - Filesystem: btrfs
-    - Mount point: /
+    - Mount point:
+    ```
+    -   /
+    ```
     - Flags:
       
 - This partition is your main one so set it to use all the remaining space 
