@@ -1,5 +1,5 @@
-# For AllyX users who want new MCU Powersave And HHD for TDP, Controller, Fans and RGB!!
-This will also install discover store and dlss enabler!
+# For AllyX users who want new MCU Powersave And HHD for TDP, Controller, Fans and RGB!! Discover STore and DLSS ENABLER!!!
+
 # Please note after install to use dlss enabler with any of your games that use DLSS you must copy the following to your steam game and add it to the launch options!
 Copy this text and change USER NAME to your name. Thats it you will have frame Gen!
 ```
