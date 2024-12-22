@@ -22,7 +22,8 @@ Environment=\"HHD_HORI_STEAM=1\"" | sudo tee $CONFIG_FILE
 
 # Mask power profile daemon
 
-sudo systemctl mask-power-profiles-daemon
+sudo systemctl mask power-profiles-daemon
+
 
 # Reload systemd manager configuration
 sudo systemctl daemon-reload
