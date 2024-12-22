@@ -20,6 +20,10 @@ Environment=\"HHD_PPD_MASK=1\"
 Environment=\"HHD_ALLY_POWERSAVE=1\"
 Environment=\"HHD_HORI_STEAM=1\"" | sudo tee $CONFIG_FILE
 
+# Mask power profile daemon
+
+sudo systemctl mask-power-profiles-daemon
+
 # Reload systemd manager configuration
 sudo systemctl daemon-reload
 
