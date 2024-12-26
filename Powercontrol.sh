@@ -7,6 +7,18 @@ curl -L https://raw.githubusercontent.com/honjow/huesync/main/install.sh | sh
 
 sudo pacman -S discover flatpak mesa-git
 
+# A script to download and install steam-powerbuttond
+
+# Clone the repository
+git clone https://github.com/ShadowBlip/steam-powerbuttond.git
+
+# Navigate to the directory
+cd steam-powerbuttond
+
+# Run the install script
+./install.sh
+
+
 # Step 2: Install DLSS Enabler
 
 
