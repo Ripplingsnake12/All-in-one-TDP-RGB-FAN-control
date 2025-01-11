@@ -5,7 +5,7 @@ curl -L https://raw.githubusercontent.com/mengmeet/PowerControl/main/install.sh 
 curl -L https://raw.githubusercontent.com/honjow/huesync/main/install.sh | sh
 
 
-sudo pacman -S discover flatpak mesa-git
+sudo pacman -S discover flatpak 
 paru -S mkinitcpio-firmware
 
 
