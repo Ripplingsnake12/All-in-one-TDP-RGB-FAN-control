@@ -7,7 +7,15 @@ Copy this text and change USER NAME to your name. Thats it you will have frame G
 ```
 
 
-After Downloading the Powercontrol.sh navigate to the download location and open a terminal and copy and paste the following to Install.
+After Downloading the Powercontrol.sh navigate to the download location and open a terminal and copy and paste the following to Install you one you choose will depend on if you want the power control version that uses deckyloader plugins , or Asusctl version, which doesnt...
+
+```
+chmod =x asusctl.sh
+```
+```
+./asusctl.sh
+```
+
 ```
 
 chmod +x Powercontrol.sh
@@ -15,6 +23,9 @@ chmod +x Powercontrol.sh
 ```
 ./Powercontrol.sh
 ```
+
+# If using asusctl you will have a new app called rog control center , you can change fans rbg and power with this , also add it as non steam game to enable you to change between silent balanced or performance.
+look around in the app and change you power pref when in battrey of ac mode , by default battrey mode is set to sileny profile, i recommend balanced. also you can go into /etc/asusd/aura_1b4c.ron , scroll to the bottom and change sleep true to false this will stop leds flashing while in sleep and charging.
 
 Reboot
 
